@@ -526,7 +526,7 @@ body, #container-wrap { background:#ededed; }
 
 #item8161 {
 	width:903px !important;
-	left:111px !important;
+	left:66px !important;
 	top:236px !important;
 	min-height:354px !important;
 }
@@ -725,7 +725,7 @@ body, #container-wrap { background:#ededed; }
 	width:527px !important;
 	height:646px !important;
 	left:624px !important;
-	top:330px !important;
+	top:334px !important;
 }
 
 #item9092 {
@@ -1048,67 +1048,6 @@ body, #container-wrap { background:#ededed; }
 	height:1400px !important;
 }
 
-#item4341 {
-	width:574px !important;
-	height:637px !important;
-	background:#ffd400;
-}
-
-#item4342 {
-	width:480px !important;
-	left:51px !important;
-	top:41px !important;
-	min-height:429px !important;
-}
-
-#item3904 {
-	width:574px !important;
-	height:547px !important;
-	top:14px !important;
-	background:#fff;
-}
-
-#item1745 {
-	width:373px !important;
-	left:51px !important;
-	top:222px !important;
-	min-height:138px !important;
-}
-
-#item1768 {
-	width:74px !important;
-	left:51px !important;
-	top:110px !important;
-	min-height:102px !important;
-}
-
-#item3524 {
-	width:387px !important;
-	left:120px !important;
-	top:390px !important;
-	min-height:51px !important;
-}
-
-#item9008 {
-	width:50px !important;
-	height:33px !important;
-	left:51px !important;
-	top:394px !important;
-}
-
-#item8928 {
-	width:574px !important;
-	height:14px !important;
-	background:#000;
-}
-
-#item9100 {
-	width:574px !important;
-	height:637px !important;
-	left:59px !important;
-	top:306px !important;
-}
-
 #item4339 {
 	width:518px !important;
 	height:637px !important;
@@ -1233,6 +1172,73 @@ body, #container-wrap { background:#ededed; }
 	height:637px !important;
 	left:823px !important;
 	top:463px !important;
+}
+
+#item4341 {
+	width:574px !important;
+	height:637px !important;
+	background:#ffd400;
+}
+
+#item4342 {
+	width:480px !important;
+	left:51px !important;
+	top:41px !important;
+	min-height:429px !important;
+}
+
+#item9189 {
+	width:574px !important;
+	height:165px !important;
+	top:473px !important;
+}
+
+#item3904 {
+	width:574px !important;
+	height:547px !important;
+	top:14px !important;
+	background:#fff;
+}
+
+#item1745 {
+	width:373px !important;
+	left:51px !important;
+	top:222px !important;
+	min-height:138px !important;
+}
+
+#item1768 {
+	width:74px !important;
+	left:51px !important;
+	top:110px !important;
+	min-height:102px !important;
+}
+
+#item3524 {
+	width:387px !important;
+	left:120px !important;
+	top:390px !important;
+	min-height:51px !important;
+}
+
+#item9008 {
+	width:50px !important;
+	height:33px !important;
+	left:51px !important;
+	top:394px !important;
+}
+
+#item8928 {
+	width:574px !important;
+	height:14px !important;
+	background:#000;
+}
+
+#item9202 {
+	width:574px !important;
+	height:637px !important;
+	left:59px !important;
+	top:306px !important;
 }
 
 #item8369 {
@@ -1517,8 +1523,8 @@ p.Question {
 p.Main-Heading {
 	font-weight:bold;
 	font-family:FF-VontobelSerif-Bold,"Vontobel Serif",serif;
-	font-size:140px;
-	line-height:168px;
+	font-size:124px;
+	line-height:148.8px;
 	color:#000;
 	hyphens:auto;
 	-moz-hyphens:auto;
