@@ -626,12 +626,6 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	-webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-#item8212 {
-	width:1400px !important;
-	height:1400px !important;
-	left:1400px !important;
-}
-
 #item8160 {
 	width:1400px !important;
 	height:1400px !important;
@@ -651,10 +645,9 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	min-height:52px !important;
 }
 
-#item8234 {
+#item8212 {
 	width:1400px !important;
 	height:1400px !important;
-	left:1400px !important;
 }
 
 #item5776 {
@@ -856,16 +849,14 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	top:931px !important;
 }
 
+#item8234 {
+	width:1400px !important;
+	height:1400px !important;
+}
+
 #item8263 {
 	width:1400px !important;
 	height:1400px !important;
-	left:1400px !important;
-}
-
-#item8331 {
-	width:1400px !important;
-	height:1400px !important;
-	left:1400px !important;
 }
 
 #item6453 {
@@ -1017,10 +1008,9 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	top:346px !important;
 }
 
-#item8342 {
+#item8331 {
 	width:1400px !important;
 	height:1400px !important;
-	left:1400px !important;
 }
 
 #item4419 {
@@ -1162,16 +1152,14 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	top:456px !important;
 }
 
+#item8342 {
+	width:1400px !important;
+	height:1400px !important;
+}
+
 #item8349 {
 	width:1400px !important;
 	height:1400px !important;
-	left:1400px !important;
-}
-
-#item8369 {
-	width:1400px !important;
-	height:1400px !important;
-	left:1400px !important;
 }
 
 #item4341 {
@@ -1360,11 +1348,9 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	top:403px !important;
 }
 
-#item769 {
+#item8369 {
 	width:1400px !important;
 	height:1400px !important;
-	left:1400px !important;
-	background:#ffd400;
 }
 
 #item4337 {
@@ -1494,6 +1480,12 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	left:1341px !important;
 	top:1358px !important;
 	min-height:52px !important;
+}
+
+#item769 {
+	width:1400px !important;
+	height:1400px !important;
+	background:#ffd400;
 }
 
 #item822 {
