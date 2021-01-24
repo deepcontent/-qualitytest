@@ -626,35 +626,6 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	-webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-@font-face {
-	font-family:FF-MinionPro-Regular;
-	src:url("../fonts/MinionPro-Regular.otf");
-}
-
-@font-face {
-	font-family:FF-VontobelSerif-Bold;
-	src:url("../fonts/VontobelSerif-Bold.otf");
-	font-weight:bold;
-}
-
-@font-face {
-	font-family:FF-VontobelSans-BoldItalic;
-	src:url("../fonts/VontobelSans-BoldItalic.otf");
-	font-weight:bold;
-	font-style:italic;
-}
-
-@font-face {
-	font-family:FF-VontobelSans-Bold;
-	src:url("../fonts/VontobelSans-Bold.otf");
-	font-weight:bold;
-}
-
-@font-face {
-	font-family:FF-VontobelSans-Book;
-	src:url("../fonts/VontobelSans-Book.otf");
-}
-
 #item8212 {
 	width:1400px !important;
 	height:1400px !important;
@@ -1547,7 +1518,7 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 }
 
 p.autoParaStyle1 {
-	font-family:FF-VontobelSans-Book,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:36px;
 	line-height:43.2px;
 	color:#000;
@@ -1567,7 +1538,7 @@ p.autoParaStyle1 {
 }
 
 p.Code {
-	font-family:FF-VontobelSans-Book,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:8px;
 	line-height:9.6px;
 	color:#000;
@@ -1588,7 +1559,7 @@ p.Code {
 
 p.Q9-Pullout {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:32px;
 	line-height:38.4px;
 	color:#000;
@@ -1597,7 +1568,7 @@ p.Q9-Pullout {
 }
 
 p.Client-Company {
-	font-family:FF-VontobelSans-Book,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:24px;
 	line-height:28.8px;
 	color:#000;
@@ -1606,7 +1577,7 @@ p.Client-Company {
 
 p.Client-Name {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:24px;
 	line-height:28.8px;
 	color:#000;
@@ -1615,7 +1586,7 @@ p.Client-Name {
 
 p.Positive-Yielding {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:29px;
 	line-height:25px;
 	color:#000;
@@ -1626,7 +1597,7 @@ p.Positive-Yielding {
 p.Answers-Heading {
 	font-weight:bold;
 	font-style:italic;
-	font-family:FF-VontobelSans-BoldItalic,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:21px;
 	line-height:25.2px;
 	color:#000;
@@ -1636,7 +1607,7 @@ p.Answers-Heading {
 
 p._70_ {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:76px;
 	line-height:91.2px;
 	color:#000;
@@ -1645,7 +1616,7 @@ p._70_ {
 }
 
 p.Answers-White {
-	font-family:FF-VontobelSans-Book,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:21px;
 	line-height:25.2px;
 	color:#fff;
@@ -1654,7 +1625,7 @@ p.Answers-White {
 }
 
 p.Answers {
-	font-family:FF-VontobelSans-Book,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:21px;
 	line-height:25.2px;
 	color:#000;
@@ -1664,7 +1635,7 @@ p.Answers {
 
 p.Question-Numbers {
 	font-weight:bold;
-	font-family:FF-VontobelSerif-Bold,"Vontobel Serif",serif;
+	font-family:"Vontobel Serif",serif;
 	font-size:90px;
 	line-height:108px;
 	color:#000;
@@ -1673,7 +1644,7 @@ p.Question-Numbers {
 
 p.Question-White {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:21px;
 	line-height:25.2px;
 	color:#fff;
@@ -1683,7 +1654,7 @@ p.Question-White {
 
 p.Question {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 	font-size:21px;
 	line-height:25.2px;
 	color:#000;
@@ -1693,7 +1664,7 @@ p.Question {
 
 p.Main-Heading {
 	font-weight:bold;
-	font-family:FF-VontobelSerif-Bold,"Vontobel Serif",serif;
+	font-family:"Vontobel Serif",serif;
 	font-size:124px;
 	line-height:148.8px;
 	color:#000;
@@ -1713,7 +1684,7 @@ p.Main-Heading {
 }
 
 p.Basic-Paragraph {
-	font-family:FF-MinionPro-Regular,"Minion Pro","Times New Roman", Times, serif;
+	font-family:"Minion Pro","Times New Roman", Times, serif;
 	font-size:12px;
 	line-height:14.4px;
 	color:#000;
@@ -1754,7 +1725,7 @@ p.No-Paragraph-Style {
 
 span.Bold-Names {
 	font-weight:bold;
-	font-family:FF-VontobelSans-Bold,"Vontobel Sans",sans-serif;
+	font-family:"Vontobel Sans",sans-serif;
 }
 
 span.None {
