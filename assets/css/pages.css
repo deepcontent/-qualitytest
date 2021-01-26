@@ -961,7 +961,7 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 }
 
 #item3340 {
-	width:285px !important;
+	width:366px !important;
 	left:113px !important;
 	top:444px !important;
 	min-height:94px !important;
@@ -1199,7 +1199,7 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	width:387px !important;
 	left:120px !important;
 	top:390px !important;
-	min-height:65px !important;
+	min-height:94px !important;
 }
 
 #item9008 {
@@ -1493,12 +1493,5 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	left:109px !important;
 	top:416px !important;
 	min-height:552px !important;
-}
-
-#item4199 {
-	width:233px !important;
-	height:61px !important;
-	left:109px !important;
-	top:1227px !important;
 }
 #in5footer,  #prefooter {display:none;}
