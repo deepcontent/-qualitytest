@@ -638,13 +638,6 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	min-height:372px !important;
 }
 
-#item9329 {
-	width:65px !important;
-	left:120px !important;
-	top:555px !important;
-	min-height:47px !important;
-}
-
 #item8212 {
 	width:1400px !important;
 	height:1400px !important;
@@ -1473,6 +1466,13 @@ html[data-dir="rtl"] nav#page-nav > #backBtn, html:not([data-dir="rtl"]) nav#pag
 	height:318px !important;
 	left:208px !important;
 	top:1013px !important;
+}
+
+#item9359 {
+	width:25px !important;
+	left:577px !important;
+	top:1303px !important;
+	min-height:27px !important;
 }
 
 #item769 {
