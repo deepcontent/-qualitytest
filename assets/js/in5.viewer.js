@@ -32,7 +32,7 @@ $(function(){
 		var li = 0, nl = numLayouts, la;
 		for(li;li<nl;li++) {
 			la = in5.layouts[li];
-			$titem = $('<div data-index="'+th+'" class="viewer-page-thumb"><img class=" '+la.class+'" title="page '+th+'" alt="page '+th+'" src="assets/images/pagethumb_'+((th*.0001).toFixed(4).substr(2)+'_'+li)+'.jpg"/></div>'); 
+			$titem = $('<div class="viewer-page-thumb"><img class=" '+la.class+'" title="page '+th+'" alt="page '+th+'" src="assets/images/pagethumb_'+((th*.0001).toFixed(4).substr(2)+'_'+li)+'.jpg"/></div>'); 
 			$titem[0].pageIndex = th;
 			$titem.on(clickEv,function(e){if(!beenDragged){nav.to(this.pageIndex); togglePageThumbs();} });
 			$vthumbs.append($titem);
@@ -45,23 +45,18 @@ $(function(){
 		});
 	}
 	$vwrap.append($vthumbwrap);
-	$(document).on('pageRendered',function(){ $('.viewer-page-thumb').removeClass('active').filter('[data-index="'+nav.current+'"]').addClass('active'); });
+	$(document).on('pageRendered',function(){ $('.viewer-page-thumb').removeClass('active').eq(nav.current-1).addClass('active'); });
 	$progbar = $("<div id='viewer_progress_bar'> </div>");
 	if(viewOpts.progress) {
 		if(!multifile) $progbar.css({'-webkit-transition':'.5s width','transition':'.5s width'});
 		$vwrap.append($progbar);
 		updateReadingProgress(getStartPage());
 	}
-	function togglePageThumbs(){ $vthumbwrap.toggle({duration:0,start:function(){
-		$('.viewer-page-thumb.active').each(function(ind,el){
-			$th = $(this), w = $th.width();
-			if(w > 0) { $vthumbwrap.scrollLeft($th.offset().left - window.innerWidth/2 + w/2); };
-		});
-	}}); }
+	function togglePageThumbs(){ $vthumbwrap.toggle(); }
 	$vwrap.append($vbar);
 	var $vlogo = $vwrap.find('#viewer-logo'), $vtitle = $vwrap.find('#viewer-title'), $vcount = $vwrap.find('#viewer-pagecount'), $vopts = $vwrap.find('#viewer-options');
 	$vtitle.append(viewOpts.title ? document.title : '');
-	viewOpts.page ? $vcount.html(getPageStr()).on(clickEv,function(e){ if(!$vcount.find('input').length) { $vcount.html(getPageEdit()); } }) : $vcount.hide();
+	if(!viewOpts.page) $vcount.hide();
 	if(viewOpts.logo){
 		var $logoImg='';
 		switch(viewOpts.logo.split('.').pop()){
@@ -71,7 +66,7 @@ $(function(){
 		$vlogo.append($logoImg);
 		$logoImg.on('load',function(e) { $vlogo.width($logoImg.width()); });
 	} else { $vlogo.hide(); }
-	
+	$vcount.text(getPageStr());
 	var icon, cicon, $btn, iconCount=0, cl;
 	for(icon in icons){
 		cicon = icons[icon];
@@ -93,27 +88,18 @@ $(function(){
 
 	$(document).on('newPage',function(e,data) {
 		/*to do: reset zoom here, hide thumbs?*/
-		if(viewOpts.page) $vcount.html(getPageStr());
+		if(viewOpts.page) $vcount.text(getPageStr());
 		if(multifile) updateReadingProgress(nav.current);
 		else updateReadingProgress(data.index+1);
 	});
-	function getPageStr(){ return $vcount.data('keepOpen') ? getPageEdit : '<span id="page-display-wrap" style="cursor:pointer;">'+ (nav.current || '—') + ' / ' + nav.numPages +'</span>'; }
-	function getPageEdit(){
-		$in = $('<input type="number" style="min-width:6ex;" min="1" max="'+nav.numPages+'" id="jump_to_page" autofocus="autofocus" formnovalidate="formnovalidate" size="'+(nav.numPages.toString().length+4)+'" value="'+(nav.current||1)+'"/>');
-		$in.on('keypress',function(e){ if(e.which == 13) { $vcount.data('keepOpen',!1); nav.to(Math.min (Math.max(1, parseInt($in.val())),nav.numPages) ); } }).on('input',function(e) { 
-			if(e.originalEvent.inputType == 'insertText') { return; }
-			$vcount.data('keepOpen',!0); 
-			nav.to(parseInt($in.val())); 
-		});
-		return $("<span id='page-edit-wrap'/>").append([$in,$("<span> / " + nav.numPages + "</span>").on(clickEv,function(e){ $vcount.data('keepOpen',!1); setTimeout(function(){$vcount.html(getPageStr());},1); }) ]);
-	}
+	function getPageStr(){ return nav.current + ' / ' + nav.numPages; }
+
 	function updateReadingProgress(currentPage){
 		var progress = currentPage/nav.numPages;
 		$progbar.css('width',(progress*100)+'%');
 	}
 	
 	function getContrast(c){
-		if(c=='transparent') return 'light';
 		c = c.split('#').pop();
 		if(c.length === 3) {c=c+c;}
     	var r = parseInt(c.substr(0,2),16), g = parseInt(c.substr(2,2),16), b = parseInt(c.substr(4,2),16), yiq = ((r*.3)+(g*.59)+(b*.114));
