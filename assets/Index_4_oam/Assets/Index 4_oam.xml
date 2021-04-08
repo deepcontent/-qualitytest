@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:Index 4" name="Index 4" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Tumult Hype]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
+
+  <icon src="Default.png" width="1175" height="881" />
+  
+  <require type="other" src="index.html" />
+<require type="folder" src="Index 4.hyperesources" />
+<require type="image" src="Index 4.hyperesources/PastedVector-1.svg" />
+<require type="image" src="Index 4.hyperesources/PastedVector-2.svg" />
+<require type="image" src="Index 4.hyperesources/PastedVector-3.svg" />
+<require type="javascript" src="Index 4.hyperesources/HYPE-728.full.min.js" />
+<require type="other" src="Index 4.hyperesources/2A89A1-restorable.plist" />
+<require type="image" src="Index 4.hyperesources/PastedVector-4.svg" />
+<require type="image" src="Index 4.hyperesources/PastedVector-5.svg" />
+<require type="image" src="Index 4.hyperesources/Man1-black-background-1024.jpg" />
+<require type="image" src="Index 4.hyperesources/Woman3-black-background-1024.jpg" />
+<require type="other" src="Index 4.hyperesources/VontobelSans-Regular.woff" />
+<require type="javascript" src="Index 4.hyperesources/HYPE-728.thin.min.js" />
+<require type="image" src="Index 4.hyperesources/Woman1-black-background-1024.jpg" />
+<require type="image" src="Index 4.hyperesources/arrows-slider-right.svg" />
+<require type="image" src="Index 4.hyperesources/arrows-slider-left.svg" />
+<require type="javascript" src="Index 4.hyperesources/HYPE-728.waypoints.min.js" />
+<require type="other" src="Index 4.hyperesources/VontobelSans-Bold.woff" />
+<require type="other" src="Index 4.hyperesources/VontobelSerif-Bold.woff" />
+<require type="image" src="Index 4.hyperesources/Woman2-black-background-1024.jpg" />
+<require type="javascript" src="Index 4.hyperesources/index4_hype_generated_script.js" />
+<require type="image" src="Index 4.hyperesources/PastedVector.svg" />
+<require type="image" src="Default.png" />
+
+
+  <content><![CDATA[
+    <div></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="1175" hidden="true"/>
+    <property name="default-height" defaultValue="881" hidden="true"/>
+    <property name="resizable" defaultValue="true" hidden="true"/>
+    <property name="use-chrome-frame" defaultValue="false" hidden="true"/>
+    <property name="chrome-frame-installer" defaultValue="" hidden="true"/>				
+		<property name="centering" defaultValue="none" hidden="true"/>				
+		<property name="scaling" defaultValue="none" hidden="true"/>
+    <property name="html-page" defaultValue="index.html" hidden="true"/>
+  </properties>
+
+</widget>
